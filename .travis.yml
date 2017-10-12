@@ -3,4 +3,7 @@ node_js: node
 deploy:
   provider: heroku
   api_key:
-    secure: "d885f45b-6acc-4f33-ab88-cfc1217e6dc0"
+    secure: WCHRUIWd+kO6Q1cLdNXEMYGVaqaAAih+CMWt+J+S0Oo/YaS5Er26s39cv4XnXagkemh+JMWgD5RzwfZONqg6Q3j4pAv6Bl6Tlcch+WolzlpoIQnkpt+f168y1O9AyWtyMv00PNoR9lJ6CR81ZO7w8q+uBTo1mYPJR49LNjvJ5IWj51prLv+3fh+VTXZIZGo6Kq2+1C8PY31+nJMkC6eZbrmAou3Hs+tBaW9azXz3oPnYs2cIDrFYvPvWgJDjJP2MDiehdyaU3blyMqbfCaHb8+vx+UUj0egSsrOvwuIZPz8ArTEgFQq9szJ/7kP4CPAMuP4oGLYitz1fOhL57yfmaay8bovgXpBT0vmYwyNlIfgHKA/0/Cd5eqa9HXUYGeHTccde0aLqCYu0l/uzBQsNyrz0+Pta8D81vP7UwQXC6sMhiljlhV7XmXGed/8rExGppSTuK7D8G9tl51FT0vfbkRSo9SVpgv+U9n4D1KKfYAx1EuEacQ34WesiG69qwdtMPKrIdqmU4tte0enakcwcFftMYZxW8XXq/SsObj/yhBjK1fhNHWGf3NCjBO4JSnJDEa+eGc8n91obAnzf3u5zw7ofkyXUeshw3NI7NA4IJctdlimLcut1Mr4RwTRTBT+Xkj2cAp6tBhx39H5ZPg+RLnnOHSu/wH7aLAxu+SEfq0Y=
+  app: vast-cliffs-62773
+  on:
+    repo: azhoque/Blog_app
