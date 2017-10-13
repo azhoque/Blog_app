@@ -1,8 +1,8 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 
-const {app, runServer, closeServer} = require('/..server');
-const should = chai.should;
+const {app, runServer, closeServer} = require('../server');
+const should = chai.should();
 chai.use(chaiHttp);
 
 describe('BlogPosts', function(){
@@ -17,11 +17,11 @@ describe('BlogPosts', function(){
         return chai.request(app)
         .get('/blog-posts')
         .then(function(res){
-        res.should.have.staus(200);
+        res.should.have.status(200);
         res.should.be.json;
         res.body.should.be.a('array');
         res.body.should.length.be.at.least(1);
-        const expectedKeys = ['id', 'titile', 'author', 'content'];
+        const expectedKeys = ['id', 'title', 'author', 'content'];
         res.body.forEach(function(item){
             item.should.be.a('object');
             item.should.include.keys(expectedKeys);
@@ -44,6 +44,7 @@ describe('BlogPosts', function(){
             res.should.be.a('object');
             res.body.should.include.keys('id', 'title', 'author', 'content');
             res.body.id.should.not.be.null;
+            delete res.body.publishDate;
             res.body.should.deep.equal(Object.assign(newItem, {id: res.body.id}));
         });
     });
@@ -51,7 +52,9 @@ describe('BlogPosts', function(){
     it("should update item on PUT", function() {
         const updateData = {
           title: "blog 3",
+          author: "Jon",  
           content: "I am a puppy and I love bully-sticks."
+    
         };
         return chai.request(app)
         .get('/blog-posts')

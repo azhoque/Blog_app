@@ -4,8 +4,8 @@
   "description": "my first blog app",
   "main": "server.js",
   "scripts": {
-    "test": "mocha ./test",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha ./test"
   },
   "author": "Aziz Hoque",
   "license": "ISC",
@@ -13,5 +13,9 @@
     "express": "^4.16.1",
     "morgan": "^1.9.0",
     "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0"
   }
 }
