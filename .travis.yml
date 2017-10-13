@@ -4,7 +4,7 @@ deploy:
   provider: heroku
   api_key:
     secure: Nyi2hTpDYGI3p+C9RbC7Ni8+kTTSS8jA4BCBfDPgQUqqsdJ5D2UM1lPdMjokXMcNqBj2a2VDDnbzJEfPkxSJORfrdVy4XY3QRBaiRFlOoi3xD/EedsP78LnMOjst+Uebrzx/FdZO7HNAjb9WaPzq0Fw2mIIdRk8KCw+sf0Mbf014hTr8Kwk1EHIqFKZhiysWauqp6wm1OBar9JYHUszslhURWeAiPCkEkbsu1r6TN81Rag4pzuqpWkH/myjNKAOmIDiV1HpH8VQhUeZBZpwrKQvNSvbUkDK/DQ55dhmvzA+ps9q74rn++7GrJq5lK6OehLCllYYk7ilXDXeWr6J6FypLxDtpfB6agftkpxfBx7fSx/502Pds0cMCxqwxdHsRWyYFPDzHUzFgjA8JmbLgrzn8+iYl8HrDOACJHdx4WmWtBgtjbaeGDBRLqQToexcb53FW/fGSLO0/g+Hb3KaYVP73r2uBn8HlevR6xOeofHZBMAqg4Dv5/GYlbwmgQ/VELDWyDvZr31imvmvIMqOPnH1Byzf+HQIIJIFW5J8ry/0QGQCUkdmIoqzpPKc00gK3VuL1Hj2347dkTFZucUCOzXbmzMcgPTAOSIKJdlgCIbXUYbo9cQxz632NLQpftpBwfQhSKQde0B1ygBAy3CyYtYITOBcG2V3kgVKMWux0Gcs=
-  app: Blog_app
+  app: glacial-oasis-12160
   on:
     repo: azhoque/Blog_app
 before_script: chmod 0777 ./node_modules/.bin/mocha
